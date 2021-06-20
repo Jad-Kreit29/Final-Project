@@ -16,7 +16,7 @@ body {
   width: 250px;
 }
 
-#button-pressed {
+#button-released {
   display: none;
   width: 250px;
   -khtml-user-select: none;
@@ -26,18 +26,7 @@ body {
   user-select: none;
 }
 
-#button-done {
-  display: none;
-  width: 250px;
-}
-
 #score-text {
   position: relative;
   left: 5px;
-}
-
-#test {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }

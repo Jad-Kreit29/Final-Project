@@ -14,10 +14,9 @@
     <div id="image-container">
       <img src="./Images/button-image.png" alt="Image of a button pedestal" id="button-image" usemap="#button">
       <map name="button">
-        <area shape="rect" coords="60, 0, 140, 60"
-        onmousedown="buttonPushed()">
+        <area shape="rect" id="button-pressed" coords="60, 0, 140, 60">
       </map>
-      <img src="./Images/button clicked.png" alt="Image of a pressed image" id="button-pressed" onmouseup="buttonReleased()">
+      <img src="./Images/button clicked.png" alt="Image of a pressed image" id="button-released">
     </div><br>
     <script src="script.js"></script>
   </body>

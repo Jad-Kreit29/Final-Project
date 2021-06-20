@@ -2,7 +2,7 @@ let answer = 0
 let score = 1
 
 const soundBtn = document.querySelector('#start-math-game')
-let myAudio = document.querySelector('#audio')
+const myAudio = document.querySelector('#audio')
 myAudio.volume = (1)
 soundBtn.addEventListener('click', () => {
   myAudio.play()
@@ -19,14 +19,14 @@ function answerQuestion () {
   answer = document.getElementById('answer').value
   answer = parseInt(answer)
   if (answer !== 4 && answer !== 72 && answer !== 64 && answer !== 11 && answer !== 5 && answer !== 6 && answer !== 38 && answer !== 54 && answer !== 76 && answer !== 1) {
-      document.getElementById('incorrect-answer').style.display = 'block'
+    document.getElementById('incorrect-answer').style.display = 'block'
   }
   if ((answer === 4) && (score === 1)) {
     score = 2
     document.getElementById('math-game-text').innerHTML = '2: 6 x 12'
     document.getElementById('answer').value = ''
     document.getElementById('incorrect-answer').style.display = 'none'
-  } 
+  }
   if ((answer === 72) && (score === 2)) {
     score = 3
     document.getElementById('math-game-text').innerHTML = '3: 8 x 8'
