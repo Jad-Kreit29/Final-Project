@@ -44,7 +44,7 @@ body {
   opacity: 0.5;
 }
 
-#nextStage {
+#next-stage {
   cursor: pointer;
   display: none;
   margin-left: auto;

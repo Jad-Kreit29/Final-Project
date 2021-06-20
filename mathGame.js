@@ -5,8 +5,8 @@ const myAudio = document.querySelector('#time-out')
 myAudio.volume = (1)
 
 window.onload = function () {
-  const prefaceAudio = document.querySelector ('#preface-audio')
-  prefaceAudio.play();
+  const prefaceAudio = document.querySelector('#preface-audio')
+  prefaceAudio.play()
   prefaceAudio.onended = function () {
     myAudio.play()
     document.getElementById('math-instructions').style.display = 'none'

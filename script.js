@@ -1,12 +1,11 @@
 let clicks = 0
-music = 0
 
 const myAudio = document.querySelector('#time-out')
 
 window.onload = function () {
   document.getElementById('click-text').style.opacity = '0.2'
   const prefaceAudio = document.querySelector ('#preface-instructions')
-  prefaceAudio.play();
+  prefaceAudio.play()
   prefaceAudio.onended = function () {
     myAudio.play()
     document.getElementById('button-image2').style.display = 'none'
