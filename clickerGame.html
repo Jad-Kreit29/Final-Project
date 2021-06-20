@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="description" content="A website where you need to help a person get to the bathroom!">
+    <meta name="keywords" content="VAS, website">
+    <meta name="author" content="J. Kreit">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to the Washroom!</title>
+    <link href="style3.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id="score-text">Score: <span id="score"></span></h1>
+    <div id="image-container">
+      <img src="./Images/button-image.png" alt="Image of a button pedestal" id="button-image" usemap="#button">
+      <map name="button">
+        <area shape="rect" coords="60, 0, 140, 60"
+        onmousedown="buttonPushed()">
+      </map>
+      <img src="./Images/button clicked.png" alt="Image of a pressed image" id="button-pressed" onmouseup="buttonReleased()">
+    </div><br>
+    <script src="script.js"></script>
+  </body>
+</html>

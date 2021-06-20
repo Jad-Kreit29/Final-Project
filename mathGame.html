@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="description" content="A website where you need to help a person get to the bathroom!">
+    <meta name="keywords" content="VAS, website">
+    <meta name="author" content="J. Kreit">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to the Washroom!</title>
+    <link href="style4.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <audio src="./sounds/05 YDKJ Question Music 3.mp3" id="audio"></audio>
+    <div id="main-container">
+      <div id="game-instructions">
+        <h1 id="math-instructions">It's time for your worst nightmare...MATH. You must answer 10 math questiosn correctly in order to move on. Beware that timer, because you don't have much time! Heheh...</h1>
+        <button type="button" id="start-math-game">START</button>
+        <div id="math-game-text-container"> 
+          <span><h1 id="math-game-text"></h1>
+          <h1 id="incorrect-answer">INCORRECT!</h1></span>
+          <button type="button" onclick="window.location.href='https://final-project.jadkreit29.repl.co/finalStage.html';" id="game-win-button">PUSH ON</button>
+        </div>
+      </div>
+    </div>
+    <div id="input-container">
+      <input type="text" placeholder="Enter Answer Here" id="answer" name="answer box"><br>
+      <button id="answer-button">Answer</button>
+    </div>
+  <script src="mathGame.js"></script>
+  </body>
+</html>

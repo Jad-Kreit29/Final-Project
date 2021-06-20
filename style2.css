@@ -1,0 +1,27 @@
+body {
+  background-image: url("./backgrounds/pick-door.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#door-image1 {
+  width: 220px;
+  position: relative;
+  left: 320px;
+  top: 90px;
+}
+
+#door-image2 {
+  width: 220px;
+  position: relative;
+  top: 92px;
+  left: 600px;
+}
+
+#main-title {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-family: "gill sans", sans-serif;
+}

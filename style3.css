@@ -1,0 +1,43 @@
+body {
+  background-image: url("./backgrounds/clicker-game.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  align-items: center;
+}
+
+#button-image {
+  width: 250px;
+}
+
+#button-pressed {
+  display: none;
+  width: 250px;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#button-done {
+  display: none;
+  width: 250px;
+}
+
+#score-text {
+  position: relative;
+  left: 5px;
+}
+
+#test {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

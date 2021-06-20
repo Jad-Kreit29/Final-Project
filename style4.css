@@ -1,0 +1,122 @@
+body {
+  background-image: url("./backgrounds/Math Game Background.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  height: 710px;
+  align-items: center;
+}
+
+#game-instructions {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35.7%;
+  height: 340.5px;
+  padding: 10px;
+  background-image: linear-gradient(180deg, #93c47dff, #487234ff);
+}
+
+#math-instructions {
+  text-align: center;
+  color: white;
+  font-family: "courier new", monospace;
+  font-size: 26px;
+}
+
+#start-math-game {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  font-family: "lucida sans typewriter", monospace;
+  border: 3px solid black;
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+}
+
+#math-game-text-container {
+  display: none;
+  line-height: 340.5px;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+#math-game-text {
+  color: white;
+  font-family: "courier new", monospace;
+  font-size: 65px;
+}
+
+#input-container {
+  width: 20%;
+  border: 3px solid black;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -75px;
+  padding: 10px;
+  background-color: red;
+}
+
+#answer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: "calibri", sans-serif;
+}
+
+#answer-button {
+  cursor: pointer;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: "gill sans", sans-serif;
+  border: 3px solid black;
+  padding: 2px;
+  color: white;
+  background-color: orange;
+}
+
+
+
+#game-win-button {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  font-size: 40px;
+  font-family: "lucida sans typewriter", monospace;
+  border: 3px solid black;
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+}
+
+#incorrect-answer {
+  border: 1px solid;
+  background: whitesmoke;
+  padding: 3px;
+  display: none;
+  color: #ff5147;
+  font-family: "courier new", monospace;
+  font-size: 55px;
+  text-align: center;
+}
