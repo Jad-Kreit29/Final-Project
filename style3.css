@@ -13,6 +13,12 @@ body {
 }
 
 #button-image {
+  display: none;
+  width: 250px;
+}
+
+#button-image2 {
+  display: block;
   width: 250px;
 }
 
@@ -26,7 +32,29 @@ body {
   user-select: none;
 }
 
-#score-text {
+#click-text {
   position: relative;
   left: 5px;
+}
+
+#game-instructions {
+  text-align: center;
+  font-size: 30px;
+  margin-top: -30px;
+  opacity: 0.5;
+}
+
+#nextStage {
+  cursor: pointer;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -70px;
+  margin-bottom: 60px;
+  padding: 5px;
+  font-size: 20px;
+  border: 0.5px solid black;
+  border-radius: 2px;
+  font-style: italic;
+  background-color: #ffbc7bff;
 }

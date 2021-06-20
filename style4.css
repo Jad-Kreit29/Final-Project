@@ -29,19 +29,6 @@ body {
   font-size: 26px;
 }
 
-#start-math-game {
-  cursor: pointer;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 40px;
-  font-family: "lucida sans typewriter", monospace;
-  border: 3px solid black;
-  background-color: darkgreen;
-  color: white;
-  text-align: center;
-}
-
 #math-game-text-container {
   display: none;
   line-height: 340.5px;

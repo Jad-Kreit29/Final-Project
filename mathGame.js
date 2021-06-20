@@ -1,17 +1,20 @@
 let answer = 0
 let score = 1
 
-const soundBtn = document.querySelector('#start-math-game')
-const myAudio = document.querySelector('#audio')
+const myAudio = document.querySelector('#time-out')
 myAudio.volume = (1)
-soundBtn.addEventListener('click', () => {
-  myAudio.play()
-  document.getElementById('math-instructions').style.display = 'none'
-  document.getElementById('math-game-text-container').style.display = 'block'
-  document.getElementById('start-math-game').style.display = 'none'
-  document.getElementById('input-container').style.display = 'block'
-  document.getElementById('math-game-text').innerHTML = '1: 2 + 2'
-})
+
+window.onload = function () {
+  const prefaceAudio = document.querySelector ('#preface-audio')
+  prefaceAudio.play();
+  prefaceAudio.onended = function () {
+    myAudio.play()
+    document.getElementById('math-instructions').style.display = 'none'
+    document.getElementById('math-game-text-container').style.display = 'block'
+    document.getElementById('input-container').style.display = 'block'
+    document.getElementById('math-game-text').innerHTML = '1: 2 + 2'
+  }
+}
 
 document.getElementById('answer-button').addEventListener('click', answerQuestion)
 
