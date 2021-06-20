@@ -10,6 +10,7 @@
 }
 
 #start-game-button {
+  cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
