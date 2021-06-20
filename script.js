@@ -4,7 +4,7 @@ const myAudio = document.querySelector('#time-out')
 
 window.onload = function () {
   document.getElementById('click-text').style.opacity = '0.2'
-  const prefaceAudio = document.querySelector ('#preface-instructions')
+  const prefaceAudio = document.querySelector('#preface-instructions')
   prefaceAudio.play()
   prefaceAudio.onended = function () {
     myAudio.play()
