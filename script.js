@@ -1,5 +1,4 @@
 let score = 0
-let timer = 20
 
 document.getElementById('button-pressed').addEventListener('mousedown', buttonPushed)
 
