@@ -4,7 +4,7 @@ window.onload = function () {
 
 // Step 1
 
-document.getElementById('Option1-2').addEventListener('click', option1)
+document.getElementById('option1-2').addEventListener('click', option1)
 
 function option1 () {
   document.getElementById('button-set1').style.display = 'none'
@@ -14,7 +14,7 @@ function option1 () {
 
 // Step 2
 
-document.getElementById('Option2-1').addEventListener('click', option2)
+document.getElementById('option2-1').addEventListener('click', option2)
 
 function option2 () {
   document.getElementById('button-set2').style.display = 'none'
@@ -24,7 +24,7 @@ function option2 () {
 
 // Step 3
 
-document.getElementById('Option3-2').addEventListener('click', option3)
+document.getElementById('option3-2').addEventListener('click', option3)
 
 function option3 () {
   document.getElementById('button-set3').style.display = 'none'
@@ -34,7 +34,7 @@ function option3 () {
 
 // Step 4
 
-document.getElementById('Option4-1').addEventListener('click', option4)
+document.getElementById('option4-1').addEventListener('click', option4)
 
 function option4 () {
   document.getElementById('button-set4').style.display = 'none'
@@ -44,7 +44,7 @@ function option4 () {
 
 // Step 5
 
-document.getElementById('Option5-3').addEventListener('click', option5)
+document.getElementById('option5-3').addEventListener('click', option5)
 
 function option5 () {
   document.getElementById('button-set5').style.display = 'none'
@@ -54,7 +54,7 @@ function option5 () {
 
 // Step 6
 
-document.getElementById('Option6-2').addEventListener('click', option6)
+document.getElementById('option6-2').addEventListener('click', option6)
 
 function option6 () {
   document.getElementById('button-set6').style.display = 'none'
@@ -64,7 +64,7 @@ function option6 () {
 
 // Step 7
 
-document.getElementById('Option7-3').addEventListener('click', option7)
+document.getElementById('option7-3').addEventListener('click', option7)
 
 function option7 () {
   document.getElementById('button-set7').style.display = 'none'
