@@ -14,7 +14,7 @@ body {
   padding: 10px;
   background-color: #efefefff;
   position: relative;
-  top: 560px;
+  top: 480px;
   text-align: center;
 }
 
@@ -87,6 +87,15 @@ body {
 
 #last-action {
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'calibri', sans-serif;
+}
+
+#timer {
+  width: 2.5%;
+  color: red;
+  font-family: 'impact', serif;
+  position: relative;
+  left: 5px;
+  text-align: center;
 }

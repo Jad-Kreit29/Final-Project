@@ -1,5 +1,20 @@
+let timeLeft = 20
+document.getElementById('timer').innerHTML = timeLeft
+
 window.onload = function () {
   document.getElementById('button-set1').style.display = 'block'
+  const finalAudio = document.querySelector('#final-stage-music')
+  finalAudio.play()
+  let countDownTimer = setInterval(function(){
+  if(timeLeft <= 0) {
+    clearInterval(countDownTimer)
+    document.getElementById('timer').innerHTML = '0'
+  } else {
+      document.getElementById('timer').innerHTML = timeLeft + ''
+  }
+  document.getElementById('timer').value = 10 - timeLeft
+  timeLeft -= 1
+  }, 1000)
 }
 
 // Step 1

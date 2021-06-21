@@ -1,10 +1,14 @@
 let clicks = 0
+let pass = 0
+let timeLeft = 32
+document.getElementById('timer').innerHTML = timeLeft
 
 const myAudio = document.querySelector('#time-out')
 const winMusic = document.querySelector('#win-music')
 
 window.onload = function () {
   document.getElementById('click-text').style.opacity = '0.2'
+  document.getElementById('timer').style.opacity = '0.2'
   const prefaceAudio = document.querySelector('#preface-instructions')
   prefaceAudio.play()
   prefaceAudio.onended = function () {
@@ -13,6 +17,24 @@ window.onload = function () {
     document.getElementById('button-image').style.display = 'block'
     document.getElementById('game-instructions').innerHTML = 'GOO!'
     document.getElementById('click-text').style.opacity = '1'
+    document.getElementById('timer').style.opacity = '1'
+    let countDownTimer = setInterval(function(){
+      if(timeLeft <= 0) {
+        clearInterval(countDownTimer)
+        document.getElementById('timer').innerHTML = '0'
+      } else {
+          document.getElementById('timer').innerHTML = timeLeft + ''
+      }
+      if (pass === 1) {
+        clearInterval(countDownTimer)
+        document.getElementById('timer').innerHTML = 'Clear'
+        document.getElementById('timer').style.color = 'greenyellow'
+        document.getElementById('timer').style.width = '5.5%'
+        document.getElementById('timer').style.backgroundColor = 'black'
+      }
+      document.getElementById('timer').value = 10 - timeLeft
+      timeLeft -= 1
+    }, 1000)
   }
 }
 
@@ -42,6 +64,8 @@ function buttonReleased () {
     document.getElementById('game-instructions').innerHTML = 'Well done, you may proceed'
     document.getElementById('game-instructions').style.fontStyle = 'italic'
     document.getElementById('next-stage').style.display = 'block'
+    pass = pass + 1
+    window.stop()
     myAudio.pause()
     winMusic.play()
   }
