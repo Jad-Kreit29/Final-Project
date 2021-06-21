@@ -3,6 +3,8 @@ let score = 1
 
 const myAudio = document.querySelector('#time-out')
 myAudio.volume = (1)
+const winMusic = document.querySelector('#win-music')
+
 
 window.onload = function () {
   const prefaceAudio = document.querySelector('#preface-audio')
@@ -85,5 +87,6 @@ function answerQuestion () {
     document.getElementById('input-container').style.display = 'none'
     myAudio.pause()
     document.getElementById('game-win-button').style.display = 'block'
+    winMusic.play()
   }
 }

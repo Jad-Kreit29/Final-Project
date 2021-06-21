@@ -1,6 +1,7 @@
 let clicks = 0
 
 const myAudio = document.querySelector('#time-out')
+const winMusic = document.querySelector('#win-music')
 
 window.onload = function () {
   document.getElementById('click-text').style.opacity = '0.2'
@@ -40,7 +41,8 @@ function buttonReleased () {
     document.getElementById('button-image').style.pointerEvents = 'none'
     document.getElementById('game-instructions').innerHTML = 'Well done, you may proceed'
     document.getElementById('game-instructions').style.fontStyle = 'italic'
-    document.getElementById('nextStage').style.display = 'block'
+    document.getElementById('next-stage').style.display = 'block'
     myAudio.pause()
+    winMusic.play()
   }
 }

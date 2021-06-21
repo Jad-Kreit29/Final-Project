@@ -83,6 +83,7 @@ span {
 }
 
 #game-win-button {
+  cursor: pointer;
   display: none;
   margin-left: auto;
   margin-right: auto;
