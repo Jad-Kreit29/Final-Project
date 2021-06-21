@@ -29,18 +29,64 @@ body {
   font-size: 20px;
 }
 
-#test {
+.button-look {
+  font-size: 20px;
+  font-family: 'palatino', sans-serif;
+}
+
+#button-set1 {
+  display: none;
+}
+
+#button-set2 {
+  display: none;
+}
+
+#button-set3 {
+  display: none;
+}
+
+#button-set4 {
+  display: none;
+}
+
+#button-set5 {
+  display: none;
+}
+
+#button-set6 {
+  display: none;
+}
+
+#button-set7 {
+  display: none;
+}
+
+#last-option {
   font-size: 20px;
 }
 
-#test2 {
-  font-size: 20px;
+#last-option2 {
+  display: none;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#test3 {
-  font-size: 20px;
+#last-option3 {
+  cursor: pointer;
+  display: none;
+  font-size: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#test4 {
-  font-size: 20px;
+#last-input {
+  display: none;
+}
+
+#last-action {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'calibri', sans-serif;
 }

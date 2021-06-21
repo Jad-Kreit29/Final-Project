@@ -1,0 +1,23 @@
+.fail-instructions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'calibri', sans-serif;
+  text-align: center;
+}
+
+.replay-button {
+  cursor: pointer;
+  font-size: 40px;
+  font-family: 'calibri', sans-serif;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: ghostwhite;
+  transition-duration: 0.4s;
+}
+
+.replay-button:hover {
+  background-color: grey;
+}
