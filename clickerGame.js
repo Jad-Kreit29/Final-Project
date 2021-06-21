@@ -18,12 +18,12 @@ window.onload = function () {
     document.getElementById('game-instructions').innerHTML = 'GOO!'
     document.getElementById('click-text').style.opacity = '1'
     document.getElementById('timer').style.opacity = '1'
-    let countDownTimer = setInterval(function(){
-      if(timeLeft <= 0) {
+    const countDownTimer = setInterval (function (){
+      if (timeLeft <= 0) {
         clearInterval(countDownTimer)
         document.getElementById('timer').innerHTML = '0'
       } else {
-          document.getElementById('timer').innerHTML = timeLeft + ''
+        document.getElementById('timer').innerHTML = timeLeft + ''
       }
       if (pass === 1) {
         clearInterval(countDownTimer)

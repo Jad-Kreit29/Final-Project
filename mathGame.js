@@ -2,7 +2,6 @@ let answer = 0
 let score = 1
 let pass = 0
 
-
 let timeLeft = 32
 document.getElementById('timer').innerHTML = timeLeft
 
@@ -21,12 +20,12 @@ window.onload = function () {
     document.getElementById('math-game-text-container').style.display = 'block'
     document.getElementById('input-container').style.display = 'block'
     document.getElementById('math-game-text').innerHTML = '1: 2 + 2'
-    let countDownTimer = setInterval(function(){
+    const countDownTimer = setInterval (function (){
       if (timeLeft <= 0) {
         clearInterval(countDownTimer)
         document.getElementById('timer').innerHTML = '0'
       } else {
-          document.getElementById('timer').innerHTML = timeLeft + ''
+        document.getElementById('timer').innerHTML = timeLeft + ''
       }
       if (pass === 1) {
         clearInterval(countDownTimer)
