@@ -18,7 +18,7 @@ window.onload = function () {
     document.getElementById('game-instructions').innerHTML = 'GOO!'
     document.getElementById('click-text').style.opacity = '1'
     document.getElementById('timer').style.opacity = '1'
-    const countDownTimer = setInterval (function (){
+    const countDownTimer = setInterval(function () {
       if (timeLeft <= 0) {
         clearInterval(countDownTimer)
         document.getElementById('timer').innerHTML = '0'

@@ -20,7 +20,7 @@ window.onload = function () {
     document.getElementById('math-game-text-container').style.display = 'block'
     document.getElementById('input-container').style.display = 'block'
     document.getElementById('math-game-text').innerHTML = '1: 2 + 2'
-    const countDownTimer = setInterval (function (){
+    const countDownTimer = setInterval(function () {
       if (timeLeft <= 0) {
         clearInterval(countDownTimer)
         document.getElementById('timer').innerHTML = '0'

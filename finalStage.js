@@ -5,7 +5,7 @@ window.onload = function () {
   document.getElementById('button-set1').style.display = 'block'
   const finalAudio = document.querySelector('#final-stage-music')
   finalAudio.play()
-  const countDownTimer = setInterval (function (){
+  const countDownTimer = setInterval(function () {
     if (timeLeft <= 0) {
       clearInterval(countDownTimer)
       document.getElementById('timer').innerHTML = '0'
