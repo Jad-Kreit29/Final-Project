@@ -5,7 +5,6 @@ const myAudio = document.querySelector('#time-out')
 myAudio.volume = (1)
 const winMusic = document.querySelector('#win-music')
 
-
 window.onload = function () {
   const prefaceAudio = document.querySelector('#preface-audio')
   prefaceAudio.play()
