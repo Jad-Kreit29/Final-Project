@@ -1,5 +1,5 @@
 /* Sets up a variable named 'timeLeft' and assigns the number 10 to it. The text element with the id 'timer' will display the value of 'timeLeft' in its innerHTML. */
-let timeLeft = 10
+let timeLeft = 20
 document.getElementById('timer').innerHTML = timeLeft
 /* Once the window of the web browser loads the webpage, a function will be activated. The div element 'button-set1' will be displayed. A new constant named 'finalAudio' will be made and finds the audio element 'final-stage-music' in the html document that it'll assign back to the constant. That constant audio will be played. */
 window.onload = function () {
